@@ -4,9 +4,9 @@ import './style.css'
 
 const UpcomingEvents = () => {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
-
+const url = 'https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&page=1&type=upcoming'
   useEffect(() => {
-    fetch('https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&page=1&type=upcoming')
+    fetch(url)
       .then(response => response.json())
       .then(data => {
         // Check if API response is not empty and has events

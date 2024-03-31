@@ -7,9 +7,9 @@ import './style.css'; // Import CSS for styling
 
 const Recommended = () => {
   const [recommendedShows, setRecommendedShows] = useState([]);
-
+const url = "https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&type=reco"
   useEffect(() => {
-    fetch('https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&type=reco')
+    fetch(url)
       .then(response => response.json())
       .then(data => setRecommendedShows(data.events))
       .catch(error => console.error('Error fetching recommended shows:', error));
