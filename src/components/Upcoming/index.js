@@ -6,7 +6,7 @@ const UpcomingEvents = () => {
   const [upcomingEvents, setUpcomingEvents] = useState([]);
 
   useEffect(() => {
-    fetch(url)
+    fetch('https://gg-backend-assignment.azurewebsites.net/api/Events?code=FOX643kbHEAkyPbdd8nwNLkekHcL4z0hzWBGCd64Ur7mAzFuRCHeyQ==&page=1&type=upcoming')
       .then(response => response.json())
       .then(data => {
         // Check if API response is not empty and has events
