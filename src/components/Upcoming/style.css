@@ -1,0 +1,57 @@
+.upcoming-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.recommended-section h3 {
+    align-self: flex-start;
+}
+.card{
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 5px;
+    
+}
+.image-background {
+    display: flex;
+    align-items: flex-end;
+    min-width: 100%;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+    font-size: 10px;
+    color: #fff;
+    
+}
+.image-background p {
+    background-color: #573f3ffc;
+    flex-grow: 1;
+    margin: 0px;
+    padding: 10px;
+}
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    flex-wrap: wrap;
+
+}
+.card-details{
+    font-size: 10px;
+}
+h4{
+    font-size: 15px;
+}
+.distance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
