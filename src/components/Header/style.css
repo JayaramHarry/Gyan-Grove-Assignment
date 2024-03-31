@@ -79,9 +79,9 @@ main{
     padding: 0px 20px;
 }
 
-a{
+/* a{
     text-decoration: none;
-}
+} */
 .location-display{
     display: flex;
     justify-content: space-between;
@@ -94,4 +94,25 @@ a{
     list-style-type: none;
     width: 70%;
     
+}
+
+@media screen and (max-width: 768px){
+    .category-button{
+        display: none;
+    }
+    .icon-wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .sign-button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    
+
 }

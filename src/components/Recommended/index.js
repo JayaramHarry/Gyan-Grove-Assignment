@@ -28,7 +28,10 @@ const Recommended = () => {
 
   return (
     <div className="recommended-section">
+      <div className='recommended-see-all'>
       <h3>Recommended Shows <span>&#8594;</span></h3>
+      <a href='#'>See all</a>
+      </div>
       <div className="horizontal-slider">
         {recommendedShows.map((show, index) => (
           <div className='recommended-event' key={index}>

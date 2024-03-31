@@ -1,12 +1,22 @@
 .recommended-section {
-    /* position: absolute; */
+    position: absolute;
     top: 70%;
-    width: 100%;
+    left: 10%;
+    right: 0%;
     height: 10%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
   }
-  
+  .recommended-see-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  a{
+    color:#fff;
+    padding-right: 10px;
+  }
 .horizontal-slider {
     display: flex;
     overflow-x: auto;
@@ -38,15 +48,21 @@
     flex: 0 0 auto;
     margin-right: 20px; /* Adjust as needed */
   }
+  .show-details{
+    background-color: #06030361;
+    padding: 10px;
+  }
+
   .show-details div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
     font-size: 10px;
 
   }
-  .recommended-event h4 {
+  .show-details div h4 {
     font-size: 15px;
+    margin-right: 20px;
   }

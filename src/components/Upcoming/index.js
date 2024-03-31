@@ -41,12 +41,12 @@ const UpcomingEvents = () => {
 
   return (
     <div className="upcoming-section">
-      <h3>Upcoming Events</h3>
+      <h3>Upcoming Events <span>&#8594;</span></h3>
       <div className="cards-container">
         {upcomingEvents.map((event, index) => (
           <div key={index} className="card">
             {/* Render the image using the manually defined image URL */}
-            <div className="image-background" style={{ backgroundImage: `url(${imageUrls[index]})`  }}>
+            <div className="upcoming-background" style={{ backgroundImage: `url(${imageUrls[index]})`  }}>
             <p>{new Date(event.date).toDateString()}</p>
             </div>
             <div className="card-details">
