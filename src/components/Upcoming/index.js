@@ -41,7 +41,10 @@ const UpcomingEvents = () => {
 
   return (
     <div className="upcoming-section">
+      <div className='see-all'>
       <h3>Upcoming Events <span>&#8594;</span></h3>
+      <a href='#'>See all</a>
+      </div>
       <div className="cards-container">
         {upcomingEvents.map((event, index) => (
           <div key={index} className="card">

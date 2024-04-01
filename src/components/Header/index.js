@@ -40,7 +40,7 @@ const Header = () => {
     }, []);
 
     return (
-        <div>
+        <>
             <header>
                 <div className="logo">
                     <h4>BookUsNow</h4>
@@ -88,7 +88,7 @@ const Header = () => {
                     ))}
                 </ul>
             </main>
-        </div>
+        </>
     );
 }
 

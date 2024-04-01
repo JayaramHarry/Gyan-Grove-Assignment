@@ -9,6 +9,7 @@ header{
     align-items: center;
     margin-bottom: 0px;
     padding: 0px 20px;
+    color: #B0BABF;
 }
 header h4{
     color: #CF2D2D;
@@ -58,25 +59,28 @@ input{
     /* justify-content: space-between; */
 }
 .favorite{
-    color: #151212;
     margin-right: 20px;
 }
 .sign-button{
     background-color: transparent;
     border: 1px solid #B0BABF;
+    color: #B0BABF;
     outline: none;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 0px 10px;
+    font-weight: 600;
 }
 main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 70%;
     margin-top: 0px;
     font-size: 10px;
     padding: 0px 20px;
+    color: #B0BABF;
+    font-weight: bold;
 }
 
 /* a{
@@ -105,6 +109,7 @@ main{
         justify-content: space-around;
         align-items: center;
         width: 100%;
+        color: #B0BABF;
 
     }
 
@@ -112,6 +117,13 @@ main{
         background-color: transparent;
         border: none;
         outline: none;
+    }
+    main{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .options{
+        width: 100%;
     }
     
 
